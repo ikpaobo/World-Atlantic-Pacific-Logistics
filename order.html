@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place an Order</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Place an Order</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="track.html">Track Shipment</a></li>
+        <li><a href="order.html">Place Order</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="order">
+    <form action="/order" method="POST">
+      <label for="packageDetails">Package Details:</label>
+      <textarea id="packageDetails" name="packageDetails" required></textarea>
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" required />
+      <label for="contact">Contact Information:</label>
+      <input type="text" id="contact" name="contact" required />
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
